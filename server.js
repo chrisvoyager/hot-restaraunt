@@ -10,8 +10,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 var tables = [];
+var waitTables = [];
 
 app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.get("/index.html", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
