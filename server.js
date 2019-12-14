@@ -11,6 +11,10 @@ app.use(express.json());
 
 var tables = [];
 
+app.get("/api/tables", function(req, res) {
+  return res.json(tables);
+});
+
 //create new reservations
 app.post("/api/tables", function(req, res) {
   var newTable = req.body;
