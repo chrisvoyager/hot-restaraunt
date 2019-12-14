@@ -4,7 +4,12 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.17.1"
+=======
+    "express": "^4.17.1",
+    "start": "^5.1.0"
+>>>>>>> 477fbc63f1a30e17d6a09355722b6103b4009d5b
   },
   "devDependencies": {},
   "scripts": {
